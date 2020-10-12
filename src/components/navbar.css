@@ -1,0 +1,154 @@
+.options_container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center; 
+  align-items: center; 
+  margin: 0;
+  padding: 0;
+  background-color: #F0F0F0;
+
+}
+
+span {
+  display: block;
+}
+
+.nav-link {
+  flex: 1;
+}
+
+.about_box, .portfolio_box, .work_box, .skills_box, .locations_box, .home_box {
+  flex: 1;
+  height: 300px;
+  background-color: #420000;
+  padding: 5px 5px 5px 0px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+.options_container h4 {
+  font-size: 25px;
+  letter-spacing: 3px;
+  color: #D1D1D1;
+  line-height: 200px;
+}
+
+.options_container a {
+  text-decoration: none;
+  cursor: crosshair;
+}
+
+.about_box {
+  background-image: url("../images/about_cloud.png");
+
+}
+
+.portfolio_box {
+  background-image: url("../images/portfolio_cloud.png");
+
+}
+
+.work_box {
+  background-image: url("../images/work_cloud.png");
+
+}
+
+.skills_box {
+  background-image: url("../images/skills_cloud.png");
+
+}
+
+.locations_box {
+  background-image: url("../images/locations_cloud.png");
+
+}
+
+.home_box {
+  background-image: url("../images/about_cloud.png");
+  cursor: crosshair;
+}
+
+.about_box:hover, .portfolio_box:hover, .work_box:hover, .skills_box:hover, .locations_box:hover, .home_box:hover {
+  background-image: url("../images/cloud_gif/redcloud.gif");
+}
+
+.about_box:hover h4, .portfolio_box:hover h4, .work_box:hover h4, .skills_box:hover h4, .locations_box:hover h4, .home_box:hover h4 {
+  animation: textgrow 4s infinite ease-in-out;
+}
+
+@keyframes textgrow {
+  0% {
+    letter-spacing: 5px;
+  }
+  25% {
+    letter-spacing: 3px;
+  }
+  50% {
+    letter-spacing: 5px;
+  }
+  75% {
+    letter-spacing: 3px;
+  }
+  100% {
+    letter-spacing: 5px;
+  }
+}
+
+.home_box {
+    display: none;
+  }
+
+/* iPad Styling*/
+
+@media only screen and (max-width: 1250px) {
+    .options_container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    .nav-link a {
+      margin: 0px;
+    }
+
+    .box {
+      width: 100%;
+    }
+
+    .home_box {
+      display: none;
+    }
+}
+
+/* Mobile Styling*/
+
+@media only screen and (max-width: 600px) {
+  .options_container {
+    width: unset;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .box {
+    flex: 0 45%;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+
+  .home_box {
+    display: block;
+  }
+
+}

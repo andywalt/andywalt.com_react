@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Mulish:wght@300;400&family=Oswald:wght@300;400&family=Sriracha&display=swap');
+
+
+@font-face {
+    font-family: "Bodoni";
+    src: url(./fonts/Bodoni.ttf) format("truetype");
+}
+
+body a(not:portfolio_container) {
+  cursor: url('/images/flashlight_cursor.png'), auto;
+}
+
+/* Home Button Styling */
+.home_button {
+  color: #F4F4F4;
+  background-color: #333333;
+  bottom: 0;
+  display: block;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  border: solid #F4F4F4 1px;
+  font-family: 'Bangers';
+  letter-spacing: 2px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home_button_portfolio:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+
+/* Footer Styling */
+
+hr.footer_divider {
+  border: none;
+  border-top: 0.1px solid #D1D1D1;
+  margin: 10px 30px 10px 30px;
+}
+
+.footer_container {
+  font-size: 12px;
+  font-family: Arial;
+  color: #D1D1D1;
+  display: flex;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:link, .footer a:visited, .footer a:active {
+  color: #D1D1D1;
+}
+
+.footer a:hover {
+  color: #333333;
+}
+
+.footer_title {
+  text-decoration: underline;
+}
+
+.copyright {
+  flex: 1;
+
+}
+
+.more_info {
+  flex: 1;
+  padding-left: 50px;
+}
+
+.more_info p {
+  margin: 5px;
+}
+
+.social_links {
+  flex: 1;
+}
+
+.social_links ul {
+  list-style-type: none;
+}
+
+
+.footer {
+  background-color: #333;
+  margin: 0px;
+}
+
+.footer_container {
+  font-size: 12px;
+  font-family: Arial;
+  color: #D1D1D1;
+  display: flex;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:link, .footer a:visited, .footer a:active {
+  color: #D1D1D1;
+}
+
+.footer a:hover {
+  color: #333333;
+}
+
+.footer_title {
+  text-decoration: underline;
+}
+
+.copyright {
+  flex: 1;
+
+}
+
+.more_info {
+  flex: 1;
+  padding-left: 50px;
+}
+
+.more_info p {
+  margin: 5px;
+}
+
+.social_links {
+  flex: 1;
+}
+
+.social_links ul {
+  list-style-type: none;
+}
+
+/* Footer Mobile Styling */
+
+@media only screen and (max-width: 600px) {
+  .footer_container {
+    flex-direction: column;
+    width: 350px;
+    margin: 10px auto 10px auto;
+    font-size: 150%;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .more_info {
+    padding: initial;
+  }
+
+  .social_links ul {
+    padding-inline-start: unset;
+  }
+
+  .footer_container p, a, li {
+    margin: 20px;
+  }
+
+  .more_info {
+    display: none;
+  }
+
+
+  hr.footer_divider {
+    width: 100%;
+    margin: 25px 0 10px 0;
+    padding: 0;
+  }
+
+  
+}
