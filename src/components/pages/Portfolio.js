@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import axios from 'axios';
-
 import PortfolioCards from '../PortfolioCard.component';
 
 import Contact from '../Contact.component';

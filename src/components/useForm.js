@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import axios from 'axios';
+import emailjs from 'emailjs-com';
 
 function useForm(callback, validate) {
 	const [values, setValues] = useState({
@@ -21,11 +21,20 @@ function useForm(callback, validate) {
 		});
 	};
 
-	const handleSubmit = e => {
+	function handleSubmit(e) {
 		e.preventDefault();
 
 		setErrors(validate(values));
 		setIsSubmitting(true);
+
+	    emailjs.sendForm('service_6rkyn1d', 'template_waduw2o', e.target, 'user_IS3jbpZkALSpz2x1BuzhM')
+	      .then((result) => {
+	          console.log(result.text);
+	      }, (error) => {
+	          console.log(error.text);
+	      });
+
+	    e.target.reset()
 	};
 
 	useEffect(
