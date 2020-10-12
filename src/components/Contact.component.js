@@ -3,8 +3,6 @@ import './Form.css';
 import FormSignup from './FormSignup.component';
 import FormSuccess from './FormSuccess.component';
 
-import emailjs from 'emailjs-com';
-
 const Contact = () => {
 	const [isSubmitted, setIsSubmitted] = useState(false);
 
