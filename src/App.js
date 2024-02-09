@@ -18,6 +18,7 @@ import Skills from "./components/pages/Skills";
 import Timeline from "./components/pages/Timeline";
 import Footer from "./components/Footer.component";
 
+
 function App() {
   return (
       <Router>

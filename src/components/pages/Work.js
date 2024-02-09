@@ -20,6 +20,9 @@ export default class Work extends Component {
               <h5>Role</h5>
               <img src="../../images/icons/work_icon.png" alt="desk-icon" height="75" />
               <ul className="role_list">
+                <li>Sales Automation</li>
+                <li>Sales Director</li>
+                <li>Senior Account Executive</li>
                 <li>Customer Marketing</li>
                 <li>Operations &amp; Sales</li>
                 <li>Barista</li>
@@ -39,6 +42,9 @@ export default class Work extends Component {
               <h5>Organization</h5>
               <img src="images/icons/cog_icon.png" alt="wheel-cog-icon" height="75" />
               <ul className="org_list">
+                <li>TUVU</li>
+                <li>Subsplash</li>
+                <li>Sights Studios</li>
                 <li>Salesforce</li>
                 <li>Tailors' Keep</li>
                 <li>Blue Bottle Inc</li>
@@ -54,6 +60,18 @@ export default class Work extends Component {
                 <li>Air Force Academy</li>
               </ul>
             </div>
+            <div className="non_profit_org">
+              <h5>Non Profit Org</h5>
+              <img src="images/icons/org_icon.png" alt="org-icon" height="75" />
+              <ul className="nonprofit_list_org">
+                <li>Celebration Church</li>  
+                <li>The Well</li>
+                <li>Sozo Church</li>
+                <li>MAP1040</li>
+                <li>Baller's Club</li>
+                <li>Association of Related Churches</li>
+              </ul>
+            </div>
             <div className="non_profit_role">
               <h5>Non Profit Role</h5>
               <img src="images/icons/hand_icon.png" alt="hand-icon" height="75" />
@@ -64,16 +82,7 @@ export default class Work extends Component {
                 <li>Executive Event Support</li>
               </ul>
             </div>
-            <div className="non_profit_org">
-              <h5>Non Profit Org</h5>
-              <img src="images/icons/org_icon.png" alt="org-icon" height="75" />
-              <ul className="nonprofit_list_org">
-                <li>Sozo Church</li>
-                <li>MAP1040</li>
-                <li>Baller's Club</li>
-                <li>Association of Related Churches</li>
-              </ul>
-            </div>
+
 
           </div>
         </div>

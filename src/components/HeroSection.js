@@ -11,12 +11,14 @@ export default class HeroSection extends Component {
       <div className="main_container">
         <div className="welcome_container">
           <div className="centered_text">
-            <h1>Andy Walt</h1>
+            <Link to="/about">
+              <h1>Andy Walt</h1>
+            </Link>
             <h4>Remarkable Experience Developer</h4>
             <div className="status_notifications">
               <div className="statuses">
                 <p>Current Location:</p>
-                <Link to="/about" className="current">Louisiana</Link>  
+                <Link to="/about" className="current">Austin, Texas</Link>  
               </div>
               <div className="statuses">
                 <p>Freelance Status:</p>
@@ -29,24 +31,25 @@ export default class HeroSection extends Component {
             </div>
 
             <div className="social_icons">
+              
               <div className="icon">
                 <a href="https://twitter.com/andywalt" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={["fab", "twitter"]} size="3x" />
+                  <FontAwesomeIcon icon="fa-brands fa-x-twitter" size="3x" />
                 </a>
               </div>
               <div className="icon">
                 <a href="https://github.com/andywalt" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={["fab", "github"]} size="3x" />
+                <FontAwesomeIcon icon="fa-brands fa-github" size="3x" />
                 </a>
               </div>
               <div className="icon">
                 <a href="https://www.linkedin.com/in/andywalt/" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={["fab", "linkedin"]} size="3x" />
+                <FontAwesomeIcon icon="fa-brands fa-linkedin" size="3x" />
                 </a>
               </div>
             </div>
 
-            <FontAwesomeIcon icon={["fas", "chevron-down"]} size="3x" className="down_arrow" />
+            <FontAwesomeIcon icon="fa-solid fa-chevron-down" size="3x" className="down_arrow" />
 
           </div> 
         </div>

@@ -1,3 +1,12 @@
+/* Import Figtree, Satisfy from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Satisfy&display=swap');
+
+/* Make Super Red */
+:root {
+  --super-red: #A71930;
+}
+
+
 .timeline {
   width: 100%;
   max-width: 1800px;
@@ -60,7 +69,7 @@
   height: 12px;
   transform: translateY(-50%);
   border-radius: 50%;
-  background: purple;
+  background: red;
 }
 
 /* Bubbles */
@@ -113,7 +122,7 @@
   display: block;
   font-size: 1.2rem;
   font-weight: bold;
-  font-family: 'Bodini  ';
+  font-family: 'Figtree';
   margin-bottom: 8px;
 }
 
@@ -207,7 +216,7 @@
     height: 25px;
     transform: translateX(-50%);
     border-radius: 50%;
-    background: purple;
+    background: var(--super-red);
 
     
   }

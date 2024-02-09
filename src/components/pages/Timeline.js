@@ -17,7 +17,7 @@ export default class Timeline extends Component {
 					<ol>
 						<li>
 							<div>
-								<time>Born in</time> Louisiana
+								<time>Born In:</time> Louisiana
 							</div>
 						</li>
 						<li>
@@ -77,7 +77,17 @@ export default class Timeline extends Component {
 						</li>
 						<li>
 							<div>
-								<time>Currently</time> Louisiana
+								<time>2020</time> Baton Rouge, LA
+							</div>
+						</li>
+						<li>
+							<div>
+								<time>2021</time> McComb, MS
+							</div>
+						</li>
+						<li>
+							<div>
+								<time>Currently</time> Austin, Texas
 							</div>
 						</li>
 
